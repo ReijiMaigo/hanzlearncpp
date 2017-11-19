@@ -38,3 +38,9 @@ ex22: $(EX22_O) $(EX22_LIB)
 
 ex23: $(EX23_O) $(EX22_LIB)
 	$(CPP) -o ex23.out $(EX23_O) $(EX22_LIB)
+
+ex24: ex24.o
+	$(CPP) -o ex24.out ex24.o
+
+ex25: ex25.o
+	$(CPP) -o ex25.out ex25.o
