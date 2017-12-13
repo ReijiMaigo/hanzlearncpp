@@ -1,5 +1,5 @@
 #include "Mem.h"
-//#include <cstring>
+#include <cstring>
 #include <iostream>
 using namespace std;
 

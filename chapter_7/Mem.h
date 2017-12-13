@@ -13,5 +13,5 @@ public:
     int msize();
     byte* pointer();
     byte* pointer(int minSize);
-}
+};
 #endif
