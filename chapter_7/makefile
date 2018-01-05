@@ -32,7 +32,7 @@ $(MEMTEST_LIB): $(MEMTEST_LIB_OBJ)
 	ar -cvq $@ $^
 
 $(MEMTEST_TARGET): $(MEMTEST_OBJ) $(MEMTEST_LIB)
-	$(CPP) -o $@ $^
+	$(CPP) -Wl,-Map=map.map  -o $@ $^
 
 #clean make#
 clean:
