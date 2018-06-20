@@ -13,8 +13,8 @@ class IntArray {
     }
     friend ostream&
         operator<<(ostream& os, const IntArray& ia);
-    friend istream&
-        operator>>(istraem& is, IntArray& ia);
+    friend std::istream&
+        operator>> (std::istraem& is, IntArray& ia);
 };
 
 ostream&
@@ -28,7 +28,7 @@ operator<<(ostream& os, const IntArray& ia) {
     return os;
 }
 
-istream& operator>>(istream& is, IntArray& ia) {
+std::istream& operator>>(std::istream& is, IntArray& ia) {
     for(int j = 0; j < ia.sz; j++)
         is >> ia.i[j];
     return is;
